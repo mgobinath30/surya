@@ -1,0 +1,172 @@
+<div class="container">
+   <!--Heading Section Start-->
+   <div class="row section animated fadeInUp headcontain" id="headerTitle">
+      <div class="col-md-12">
+         <div class="aledefault">
+            <a href="#" data-target="#" class="close returnbackclose" data-dismiss="alert" aria-label="close"
+               data-toggle="tooltip" title="Back to Home Page">&times;</a>
+            <h1>Events, for iMessage</h1>
+            <p>Find mutually available times and create events all from iMessage. </p>
+         </div>
+      </div>
+   </div>
+   <div class="row section" id="overviewSec">
+      <h2 class="section-title">Problem</h2>
+           <article class="section1 animated">
+              <p>We’ve all been part of this conversation.</p>
+              <img onClick="zoomImg(this)" src="../images/iMessageEvents/chat.png" class="img-responsive center-block colabprocess2" alt="events">
+               <h3><b>How do friends communicate?</b></h3>
+               <p>Group
+                  messaging. You have the freedom to communicate what you want, when you want, and to multiple people at once.
+                  Group messages, however, are an archive of thoughts, and are not optimized for finding a mutual time to get
+                  together. Alternate scheduling services such as WhenIsGood or Doodle are useful for meetings and interviews, but feel out of place in a social context.
+               </p>
+            </article>
+            <article class="section1 animated">
+               <h3><b>Research</b></h3>
+               <p>Pew Research Center reported that 42% of smartphone owners ages 18 to 29 uses general
+                 messaging apps such as WhatsApp, iMessage, Kik or Messenger. As such, I chose to focus on
+                 people aged 15 to 30 as the demographic. There is a steady increase in the use of mobile group chats worldwide.
+                   This chart displays users of any age who use a messaging
+                   app via mobile phone at least once per month. By 2018, eMarketer
+                   predicts that the number of chat app users worldwide will represent 80% of smartphone users.</p>
+                 <img onClick="zoomImg(this)" src="images/iMessageEvents/research2.png" class="img-responsive center-block" style="margin-top:30px;margin-bottom:30px;" alt="Events Research">
+                 <p>I conducted 12 casual, in-person interviews in order to gain insight on the ways in which different friend groups use group messaging, whether or not people put in effort to spend time with their friends, and the roadblocks people face in trying to do so.</p>
+                 <img onClick="zoomImg(this)" src="images/iMessageEvents/research1.png" class="img-responsive center-block" style="margin-top:30px;margin-bottom:30px;" alt="Events Research">
+             </article>
+   </div>
+   <!--Heading Section End-->
+   <!--Overview Section Start-->
+   <div class="row section" id="overviewSec">
+      <h2 class="section-title">Solution</h2>
+      <div class="col-md-2 col-xs-3 col-sm-3">
+         <img onClick="zoomImg(this)" src="../images/iMessageEvents/imessage.png" class="img-responsive center-block" alt="events" width="100px">
+      </div>
+      <div class="col-md-10 col-xs-9 col-sm-9">
+         <article class="section1 animated margintopzero">
+            <p><b><i>Events for iMessage allows friends to find mutually available times and organize integrated events all from iMessage.</i></b></p>
+         </article>
+         <br/>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <article class="section1 animated">
+               <h3><b>Start the conversation.</b></h3>
+               <p>Checking availability and planning events has always been a conversation. From the simple "I miss you, let's hangout" text to sharing availabilities and creating a Calendar linked event, Events for iMessage makes this conversation digital.</p>
+            </article>
+         </div>
+         <div class="col-md-12">
+            <article class="section1 animated">
+               <h3><b>Make it an event.</b></h3>
+               <p>Events for iMessage brings both casual and professional
+                  event planning directly to iMessage. Want to set up a mutually available interview time? Meet up with old
+                  friends for dinner? Suggest events as an organizer and send your own availability as an attendee. Share the
+                  event to Calendar with just a few swipes.
+               </p>
+            </article>
+         </div>
+      </div>
+   </div>
+   <!--OverView Section End-->
+   <!--Process Section Start-->
+   <div class="row section animated">
+      <h2 class="section-title">Design Process</h2>
+      <article class="section1 animated">
+         <h3><b>Constraints</b></h3>
+         <p>Creating an app that lives within the
+            context of a Messages conversation introduces unique design constraints. I had to work around the lack of
+            screen real estate and think about the existing visual elements that users expect to see within iMessage.
+            iMessage apps are typically used in the context of fast-paced, informal conversations. As such, keeping the
+            number of interaction steps as low as possible ensures that the organic flow of messaging is not lost.
+         </p>
+      </article>
+      <article class="section1 animated">
+         <h3><b>Interactions</b></h3>
+         <p>The first challenge was creating a simple, minimal
+            interface for the calendar’s integration into the app. If we’re trying to figure out when people are
+            available, we must look at hours, days, weeks, and maybe even the month to get an accurate picture of one’s
+            schedule. I decided to use a “painting” touch gesture so that users can easily “paint” their availability on
+            the calendar. This is a visual representation of the organic, fluid flow that is necessary for an unobtrusive
+            iMessage app. Also, people may be familiar with this gesture from the most popular scheduling apps, which
+            makes it simpler for users to feel comfortable with the app’s flow. Though it is sometime necessary to create
+            custom controls, using a pre-established interaction is favorable in this case as the unique value in this
+            app does not lie in the calendar by itself.
+         </p>
+      </article>
+      <img onClick="zoomImg(this)" src="images/iMessageEvents/process.png" class="img-responsive center-block" alt="Events Process">
+      <article class="section1 animated">
+         <p>I used a step-by-step flow for the availability and event creation in order to keep things simple. </p>
+         <ul>
+            <li>Will the inviter’s view look different than the invitee’s view? (only where necessary). </li>
+            <li>Should people “paint” when they are available, or when they are busy? (Available).</li>
+            <li>Will overlaying existing calendar events (iCal) feel out of place for a casual, friends-based event app? (No, it’s important to see all obligations to have an accurate schedule). </li>
+            <li>How should people’s responses be visually differentiated? (Stacked opacities of different colors).</li>
+            <li>Should we display the hours before or after the event is created? (Before, as the time of day is important for any get together). </li>
+         </ul>
+      </article>
+      <article class="section1 animated">
+         <p>Once the “inviter” sends his/her availability, the event is created. Now, all participants have the option of adding integrations to the event. Though I experimented with multiple 3rd party integrations that make sense for events, I narrowed it down to the following 4 for simplicity and clarity:</p>
+         <ol>
+            <li>Photos: Create and be automatically subscribed to a shared album with iCloud Photo Sharing.</li>
+            <li>Maps: Suggest and vote for the eventʼs location with Maps.</li>
+            <li>Music: Add a shared Apple Music playlist through MusicKit with your friendsʼ preferences in the mix.</li>
+            <li>Pay: Send or receive money from individuals through Apple Pay in iOS 11.</li>
+         </ol>
+      </article>
+   </div>
+   <!--Process Section End-->
+   <!--Walkthrough Section Start-->
+   <div class="row section animated">
+      <h2 class="section-title">Walkthrough</h2>
+      <article class="section1 animated">
+         <p>Events for iMessage enables people to easily share their availability and create integrated events all within iMessage.
+            On the left, is the inviter's view, while the right is the responder's view.
+         </p>
+      </article>
+      <div class="col-md-4 col-md-offset-1">
+         <p class="videotitle">Inviter</p>
+         <video muted loop id="video3" autoplay width="100%">
+            <source src="../images/iMessageEvents/Inviter.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+         </video>
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+         <p class="videotitle">Respondent</p>
+         <video muted loop id="video3" autoplay width="100%">
+            <source src="../images/iMessageEvents/Responder.mp4"
+               type="video/mp4">
+            Your browser does not support HTML5 video.
+         </video>
+      </div>
+   </div>
+   <!--Walkthrough Section End-->
+   <div class="row section" id="overviewSec">
+      <div class="row">
+         <div class="col-md-12">
+            <article class="section1 animated">
+               <p class="text-center imagetitle">Inviter Flow</p>
+               <img onClick="zoomImg(this)" src="images/iMessageEvents/organizer.jpg" class="img-responsive center-block" alt="Organizer Flow">
+               <br><br>
+               <p class="text-center imagetitle">Respondent Flow</p>
+               <img onClick="zoomImg(this)" src="images/iMessageEvents/respondant.jpg" class="img-responsive center-block" alt="Respondent Flow">
+            </article>
+         </div>
+      </div>
+   </div>
+   <!-- Takeaways -->
+   <div class="row section animated">
+      <h2 class="section-title">Takeaways</h2>
+      <article class="section1 animated">
+         <ul>
+            <li><b>Respect the platform that you're designing for.</b> It's important to understand the user's expectations and use established interaction patterns in order to design an experience that can live within the context of a Messages conversation. </li>
+            <li><b>Provide focused content.</b> Messaging extensions should have a single focus. For example, there are countless potential integrations for an events app such as music playlists, payment services, social media, reminders, etc. However, for clarity and ease of use, such integrations should either be optional, limited, or eliminated all together. This is an area of the app I could definitely improve upon through additional user research. </li>
+         </ul>
+      </article>
+   </div>
+   <!--Links and Info Section Start -->
+   <div class="row section animated">
+      <p class="toolstitle">Tools: Sketch, Principle</p>
+   </div>
+   <!-- Links and Info Section End-->
+</div>
+<script src="./js/textanimate.js"></script>
